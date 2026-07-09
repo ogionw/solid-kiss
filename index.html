@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solid Kiss SLU - Premium Software Engineering & AI Backend Architecture Consulting based in Andorra.">
+  <title>Solid Kiss SLU | Software Engineering & AI Backend Architecture</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-solid">Solid</span><span class="logo-kiss">Kiss</span>
+      </div>
+      
+      <nav class="nav-menu">
+        <a href="#company" class="nav-link" data-i18n="nav_company">Company</a>
+        <a href="#founder" class="nav-link" data-i18n="nav_founder">Founder</a>
+        <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="#clients" class="nav-link" data-i18n="nav_clients">Clients</a>
+      </nav>
+
+      <div class="lang-selector">
+        <button class="lang-btn" id="langBtn" aria-expanded="false" aria-haspopup="listbox">
+          <span id="currentLang">EN</span>
+          <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <ul class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Language selection">
+          <li class="lang-option active" data-value="en" role="option">English</li>
+          <li class="lang-option" data-value="es" role="option">Español</li>
+          <li class="lang-option" data-value="lv" role="option">Latviešu</li>
+          <li class="lang-option" data-value="ru" role="option">Русский</li>
+        </ul>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero / Company Section -->
+  <section id="company" class="hero-section">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="section-container hero-container">
+      <div class="hero-content">
+        <div class="badge" data-i18n="company_badge">Software Engineering & Consulting</div>
+        <h1 class="hero-title">
+          <span data-i18n="company_title_part1">Architecting Resilient</span>
+          <span class="gradient-text" data-i18n="company_title_part2">Backend & AI Systems</span>
+        </h1>
+        <p class="hero-lead" data-i18n="company_lead">
+          Software engineering consulting and system architecture based in Andorra. Design, scalability, and reliability for distributed financial platforms, payment integrations, and AI-enabled automated architectures.
+        </p>
+        
+        <div class="company-story-card">
+          <h3 data-i18n="company_story_title">Origin & Philosophy</h3>
+          <p data-i18n="company_story_text">
+            Solid Kiss SLU (Andorra) originated in 2022 by rebranding the Latvian company Yagni IK. The renaming reflects a strategic evolution in architectural philosophy. While the predecessor was conceived as a lean, short-term entity named after the software principle YAGNI (<em>"You Aren't Gonna Need It"</em>), the transition to <strong>Solid Kiss</strong> demonstrates a permanent commitment to long-term software design maturity, combining the structural integrity of <strong>SOLID</strong> design principles with the pragmatic efficiency of the <strong>KISS</strong> (<em>"Keep It Simple, Stupid"</em>) methodology.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Section (Moved Immediately After Company) -->
+  <section id="founder" class="founder-section">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="founder_title">Founder Profile</h2>
+        <p class="section-subtitle" data-i18n="founder_subtitle">Professional history, philosophy, and personal background.</p>
+      </div>
+
+      <div class="founder-grid">
+        <!-- Left: Photo, CTA & Info -->
+        <div class="founder-sidebar">
+          <div class="founder-photo-container">
+            <img src="./founderPhoto.jpeg" alt="Lion Kozlinsky" class="founder-photo">
+          </div>
+          <div class="founder-meta-info">
+            <h3>Lion Kozlinsky</h3>
+            <p class="founder-role" data-i18n="founder_role">Lead Backend Architect</p>
+            <p class="founder-loc" data-i18n="founder_loc">Andorra | Citizen of Latvia</p>
+            <p class="founder-email">solid.kiss.it@gmail.com</p>
+          </div>
+
+          <div class="founder-actions">
+            <!-- Download Button -->
+            <a href="./untailored_CV.pdf" download="Lion_Kozlinsky_CV.pdf" class="btn btn-primary" aria-label="Download CV">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+              <span data-i18n="download_cv">Download Resume</span>
+            </a>
+            <!-- GitHub Link -->
+            <a href="https://github.com/ogionw/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Background details -->
+        <div class="founder-details-card">
+          <div class="detail-section">
+            <h3 data-i18n="founder_bio_title">Biography & Experience</h3>
+            <p data-i18n="founder_bio_text">
+              Highly analytical software engineer with 15 years of experience constructing high-availability backend microservices, transactional networks, and financial payment platforms. Currently focusing on the implementation of modern AI-enabled engineering workflows, prompt engineering frameworks, and data retrieval systems (RAG).
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3 data-i18n="founder_education_title">Education & Certifications</h3>
+            <ul class="education-list">
+              <li>
+                <span class="edu-date">2026</span>
+                <div class="edu-content">
+                  <strong>Google AI Certification</strong>
+                  <p data-i18n="edu_ai">Advanced models and engineering paradigms.</p>
+                </div>
+              </li>
+              <li>
+                <span class="edu-date">2026</span>
+                <div class="edu-content">
+                  <strong>Google IT Automation with Python Certification</strong>
+                  <p data-i18n="edu_python">Configuration management, script infrastructure, and scaling.</p>
+                </div>
+              </li>
+              <li>
+                <span class="edu-date">2021</span>
+                <div class="edu-content">
+                  <strong>Event Sourcing Conference</strong>
+                  <p data-i18n="edu_event_sourcing">Advanced patterns in distributed state management and event-driven data flow.</p>
+                </div>
+              </li>
+              <li>
+                <span class="edu-date">2020</span>
+                <div class="edu-content">
+                  <strong>Domain-Driven Design Europe (DDD Europe)</strong>
+                  <p data-i18n="edu_ddd_europe">Software modeling, Strategic Design (Bounded Contexts), Event-Driven Architecture, Event Storming, and safe legacy monolith refactoring.</p>
+                </div>
+              </li>
+              <li>
+                <span class="edu-date">2011 - 2014</span>
+                <div class="edu-content">
+                  <strong>MSc in IT Management</strong>
+                  <p data-i18n="edu_msc">Transport and Telecommunication Institute, Riga.</p>
+                </div>
+              </li>
+              <li>
+                <span class="edu-date">2006 - 2011</span>
+                <div class="edu-content">
+                  <strong>BSc in Computer Sciences</strong>
+                  <p data-i18n="edu_bsc">Transport and Telecommunication Institute, Riga.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="detail-section">
+            <h3 data-i18n="founder_style_title">Work Style & Philosophy</h3>
+            <p data-i18n="founder_style_text">
+              Software development is an optimization problem. Every process, architecture, and decision should ultimately be evaluated by a single metric: efficiency.<br><br>
+              Direct and transparent communication is the most effective form of collaboration. Clear feedback, constructive disagreement, and open discussion produce better decisions than consensus driven by hierarchy or politics.<br><br>
+              The best ideas should win regardless of their source. Strong engineering cultures minimize ego and maximize objective decision-making, allowing technical merit to take precedence over individual ownership.<br><br>
+              Team success is the only success that matters. Removing blockers, sharing knowledge, and helping teammates are not acts of individual contribution—they are investments in the team's ability to deliver value.<br><br>
+              Individual performance should be measured primarily by its impact on the team's outcomes. External competition between teammates creates local optimization; shared ownership creates sustainable, high-performing engineering organizations.
+            </p>
+          </div>
+
+          <div class="detail-section">
+            <h3 data-i18n="founder_hobbies_title">Interests & Hobbies</h3>
+            <p data-i18n="founder_hobbies_text">
+              Avid reading and exploring literature. Regular travel to expand technical and cultural perspectives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="services_title">Core Competencies</h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">A specialized service suite tailored for high-availability, scalability, and automated efficiency.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1: Code Architecture -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 data-i18n="service_1_title">Code Architecture</h3>
+          <p data-i18n="service_1_desc">Tactical-level Domain-Driven Design (DDD) patterns, layered software architectures, SOLID principles, and design patterns targeting testability and long-term codebase maintainability.</p>
+        </div>
+
+        <!-- Card 2: System Architecture -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 data-i18n="service_2_title">System Architecture</h3>
+          <p data-i18n="service_2_desc">Strategic-level Domain-Driven Design (DDD). Structural engineering of distributed systems, multi-service communications, message brokers (Kafka, RabbitMQ), and caching strategies.</p>
+        </div>
+
+        <!-- Card 3: AI & LLM Integration -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a10 10 0 0 1 7.54 16.59c-.24.25-.63.27-.89.04l-1.06-.93a1 1 0 0 1-.03-1.46A7 7 0 1 0 7.44 14.2a1 1 0 0 1-.03 1.46l-1.06.93a.7.7 0 0 1-.89-.04A10 10 0 0 1 12 2z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3 data-i18n="service_3_title">AI & LLM Integration</h3>
+          <p data-i18n="service_3_desc">Implementation of state-of-the-art Retrieval-Augmented Generation (RAG) architectures, LLM pipelines, and automated processes to optimize business operations.</p>
+        </div>
+
+        <!-- Card 4: Payment & Financial Systems -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="2" y1="10" x2="22" y2="10"></line>
+            </svg>
+          </div>
+          <h3 data-i18n="service_4_title">Payment & Financial Systems</h3>
+          <p data-i18n="service_4_desc">Secure integration of multi-currency payment providers, money transfer gateways, and transactional services compliant with international regulatory standards.</p>
+        </div>
+
+        <!-- Card 5: Team Leadership & Process Delivery -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <polyline points="16 11 18 13 22 9"></polyline>
+            </svg>
+          </div>
+          <h3 data-i18n="service_5_title">Leadership & Process Delivery</h3>
+          <p data-i18n="service_5_desc">Organization of development workflows, technical hiring pipelines, engineer mentoring, regular performance evaluations, and alignment of engineering capabilities with strategic business goals.</p>
+        </div>
+
+        <!-- Card 6: Legacy Refactoring -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
+          </div>
+          <h3 data-i18n="service_6_title">Legacy Refactoring</h3>
+          <p data-i18n="service_6_desc">Modernization of obsolete codebases, migration to modern microservice patterns (CQRS, Event Sourcing, DDD), and significant technical debt reductions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clients" class="clients-section">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="clients_title">Clients & Projects</h2>
+        <p class="section-subtitle" data-i18n="clients_subtitle">A record of design, architecture, and engineering work delivered to global organizations.</p>
+      </div>
+
+      <div class="clients-grid">
+        <!-- Client 1 -->
+        <div class="client-card">
+          <div class="client-brand">
+            <!-- FP Markets SVG Logo -->
+            <svg class="client-logo" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 15h12v4H19v8h7v4h-7v9h-4V15z" fill="#00E5FF"/>
+              <path d="M30 15h12c4.4 0 7 2.2 7 5.5s-2.6 5.5-7 5.5H34v9h-4V15zm8.5 7.5c1.7 0 3-.7 3-2s-1.3-2-3-2H34v4h4.5z" fill="#00E5FF"/>
+              <path d="M49 15h4l7.5 16 7.5-16h4v20h-4V21l-6.5 14h-2L49 21v14h-4V15z" fill="#FFFFFF"/>
+              <path d="M78 30h9v4h-13V15h4v15z" fill="#FFFFFF"/>
+              <path d="M96.5 15h3.5v20h-3.5z" fill="#FFFFFF"/>
+              <path d="M106 18.5h-5v-3.5h13.5v3.5h-5v16.5H106V18.5z" fill="#FFFFFF"/>
+              <path d="M117.5 31.5c1.5 1.5 3.5 2.2 5.5 2.2s4-.7 5.5-2.2v3.5H117.5v-3.5zM128.5 25.5l-4-4.5h-1v9h1.5v-4.5z" fill="#FFFFFF"/>
+              <!-- Scaled down logo text, and bar chart symbol for FP Markets -->
+              <rect x="155" y="27" width="6" height="8" rx="1" fill="#00E5FF"/>
+              <rect x="165" y="21" width="6" height="14" rx="1" fill="#00E5FF"/>
+              <rect x="175" y="15" width="6" height="20" rx="1" fill="#00E5FF"/>
+              <path d="M150 35h36" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="client-details">
+            <h4 data-i18n="client_1_name">First Prudential Markets</h4>
+            <span class="client-meta" data-i18n="client_1_meta">Oct 2024 – Apr 2026 | Financial Brokerage</span>
+            <p class="client-desc" data-i18n="client_1_desc">
+              Architecture and development of a custom financial payment service handling money transfers across 6 trading platforms. Integrated 30+ payment providers, coordinated a core engineering team of 7 specialists, and ensured full regulatory alignment.
+            </p>
+            <div class="client-tags">
+              <span>PHP</span><span>Symfony</span><span>Architecture</span><span>Payments</span>
+            </div>
+            <a href="https://www.fpmarkets.com" target="_blank" rel="noopener noreferrer" class="client-link" aria-label="Visit First Prudential Markets">
+              <span data-i18n="visit_website">Visit Website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Client 2 -->
+        <div class="client-card">
+          <div class="client-brand">
+            <!-- Aramis Censio SVG Logo -->
+            <svg class="client-logo" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 15L35 32H15L25 15z" fill="#00E5FF" opacity="0.6"/>
+              <path d="M25 35L35 18H15L25 35z" fill="#00E5FF" opacity="0.8"/>
+              <path d="M25 15L31 23.5H19L25 15z" fill="#FFFFFF"/>
+              <!-- Diamond contour lines -->
+              <line x1="25" y1="15" x2="25" y2="35" stroke="#FFFFFF" stroke-width="0.8"/>
+              <line x1="15" y1="23.5" x2="35" y2="23.5" stroke="#FFFFFF" stroke-width="0.8"/>
+              <!-- Brand Name Text -->
+              <text x="50" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="1">ARAMIS</text>
+              <text x="135" y="32" font-family="'Outfit', sans-serif" font-weight="300" font-size="20" fill="#00E5FF" letter-spacing="1">CENSIO</text>
+            </svg>
+          </div>
+          <div class="client-details">
+            <h4 data-i18n="client_2_name">Aramis Censio</h4>
+            <span class="client-meta" data-i18n="client_2_meta">Dec 2023 – Sep 2024 | Diamond Trading Analytics</span>
+            <p class="client-desc" data-i18n="client_2_desc">
+              Design and engineering of web-based diamond valuation software and real-time online bidding analyzers utilized in state-level tenders. Delivered full analytical and pricing systems.
+            </p>
+            <div class="client-tags">
+              <span>PHP</span><span>Laravel</span><span>WebSockets</span><span>Auctions</span>
+            </div>
+            <a href="https://aramiscensio.com" target="_blank" rel="noopener noreferrer" class="client-link" aria-label="Visit Aramis Censio">
+              <span data-i18n="visit_website">Visit Website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Client 3 -->
+        <div class="client-card">
+          <div class="client-brand">
+            <!-- Stickcredit SVG Logo -->
+            <svg class="client-logo" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="12" width="22" height="14" rx="2" fill="#00E5FF"/>
+              <circle cx="21" cy="19" r="2.5" fill="#FFFFFF"/>
+              <rect x="28" y="17" width="5" height="4" fill="#1A1F2C"/>
+              <!-- Stikcredit Text -->
+              <text x="48" y="32" font-family="'Outfit', sans-serif" font-weight="800" font-size="22" fill="#FFFFFF">stik</text>
+              <text x="85" y="32" font-family="'Outfit', sans-serif" font-weight="400" font-size="22" fill="#00E5FF">credit</text>
+            </svg>
+          </div>
+          <div class="client-details">
+            <h4 data-i18n="client_3_name">Stickcredit</h4>
+            <span class="client-meta" data-i18n="client_3_meta">Sep 2022 – Nov 2023 | Digital Consumer Lending</span>
+            <p class="client-desc" data-i18n="client_3_desc">
+              Development of a secure, automated consumer lending engine integrated with credit rating bureaus, national registers, and payment processing nodes to facilitate instant scoring.
+            </p>
+            <div class="client-tags">
+              <span>PHP</span><span>Symfony</span><span>API Integration</span><span>Fintech</span>
+            </div>
+            <a href="https://stikcredit.eu" target="_blank" rel="noopener noreferrer" class="client-link" aria-label="Visit Stickcredit">
+              <span data-i18n="visit_website">Visit Website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Client 4 -->
+        <div class="client-card">
+          <div class="client-brand">
+            <!-- Sun Finance SVG Logo -->
+            <svg class="client-logo" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="11" fill="#FF8A00"/>
+              <!-- Sun Rays -->
+              <path d="M25 8V11M25 39V36M8 25H11M39 25H36M13 13L15 15M37 37L35 35M13 37L15 35M37 13L35 15" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+              <text x="50" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="0.5">sun</text>
+              <text x="85" y="32" font-family="'Outfit', sans-serif" font-weight="300" font-size="20" fill="#FF8A00" letter-spacing="0.5">finance</text>
+            </svg>
+          </div>
+          <div class="client-details">
+            <h4 data-i18n="client_4_name">OrangeSky / Sun Finance</h4>
+            <span class="client-meta" data-i18n="client_4_meta">Nov 2021 – Jul 2022 | Micro-Lending Networks</span>
+            <p class="client-desc" data-i18n="client_4_desc">
+              Design of authorization mechanisms and microservice modules. Configured and unified security rules across multiple web apps hosted on Azure and AWS cloud environments.
+            </p>
+            <div class="client-tags">
+              <span>Azure</span><span>AWS</span><span>Microservices</span><span>Security</span>
+            </div>
+            <a href="https://sunfinance.group" target="_blank" rel="noopener noreferrer" class="client-link" aria-label="Visit Sun Finance">
+              <span data-i18n="visit_website">Visit Website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Client 5 -->
+        <div class="client-card">
+          <div class="client-brand">
+            <!-- Printify SVG Logo -->
+            <svg class="client-logo" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Printify geometric clover shape -->
+              <path d="M25 10c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z" fill="#39B54A"/>
+              <path d="M35 25c0 2.8-2.2 5-5 5s-5-2.2-5-5 2.2-5 5-5 5 2.2 5 5z" fill="#39B54A"/>
+              <path d="M25 40c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z" fill="#39B54A"/>
+              <path d="M15 25c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5z" fill="#39B54A"/>
+              <circle cx="25" cy="25" r="3.5" fill="#FFFFFF"/>
+              <!-- Printify Text -->
+              <text x="48" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="24" fill="#FFFFFF">printify</text>
+            </svg>
+          </div>
+          <div class="client-details">
+            <h4 data-i18n="client_5_name">Printify</h4>
+            <span class="client-meta" data-i18n="client_5_meta">Sep 2020 – Nov 2021 | E-commerce Logistics</span>
+            <p class="client-desc" data-i18n="client_5_desc">
+              Connected and consolidated approximately 20 external print manufacturer APIs into the core e-commerce dispatch system, reducing automated onboarding times by 80%.
+            </p>
+            <div class="client-tags">
+              <span>PHP</span><span>REST API</span><span>Automation</span><span>Scalability</span>
+            </div>
+            <a href="https://printify.com" target="_blank" rel="noopener noreferrer" class="client-link" aria-label="Visit Printify">
+              <span data-i18n="visit_website">Visit Website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Client 6 -->
+        <div class="client-card">
+          <div class="client-brand">
+            <!-- IET SVG Logo -->
+            <svg class="client-logo" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="25" r="4.5" fill="#00E5FF"/>
+              <circle cx="34" cy="17" r="4.5" fill="#FFFFFF"/>
+              <circle cx="34" cy="33" r="4.5" fill="#00E5FF"/>
+              <line x1="18" y1="25" x2="34" y2="17" stroke="#FFFFFF" stroke-width="1.5"/>
+              <line x1="18" y1="25" x2="34" y2="33" stroke="#00E5FF" stroke-width="1.5"/>
+              <text x="48" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="24" fill="#FFFFFF">IET</text>
+              <text x="88" y="32" font-family="'Outfit', sans-serif" font-weight="300" font-size="24" fill="#00E5FF">.LV</text>
+            </svg>
+          </div>
+          <div class="client-details">
+            <h4 data-i18n="client_6_name">IET</h4>
+            <span class="client-meta" data-i18n="client_6_meta">Apr 2013 – Jul 2020 | High-Load Affiliate Systems</span>
+            <p class="client-desc" data-i18n="client_6_desc">
+              Maintained, optimized, and modernized a high-volume affiliate marketing platform (DoAffiliate.net). Created cargo registry logs and database structures for maritime shipping.
+            </p>
+            <div class="client-tags">
+              <span>PHP</span><span>MySQL</span><span>Affiliate Tech</span><span>Logistics</span>
+            </div>
+            <a href="https://iet.lv" target="_blank" rel="noopener noreferrer" class="client-link" aria-label="Visit IET">
+              <span data-i18n="visit_website">Visit Website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="logo">
+        <span class="logo-solid">Solid</span><span class="logo-kiss">Kiss</span>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Solid Kiss SLU. All rights reserved. <br>
+        <span class="footer-legal" data-i18n="footer_legal">Registered in Andorra. Rebrand of Yagni IK (Latvia).</span>
+      </p>
+      <div class="footer-email">solid.kiss.it@gmail.com</div>
+    </div>
+  </footer>
+
+  <!-- Modal for Service Details -->
+  <div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <div class="service-icon modal-icon" id="modalIcon"></div>
+        <h3 id="modalTitle" class="modal-title">Service Details</h3>
+        <ul id="modalDetailsList" class="modal-details-list">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./main.js"></script>
+</body>
+</html>
