@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: '.',
-  base: '/solid-kiss/',
+  base: './',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
